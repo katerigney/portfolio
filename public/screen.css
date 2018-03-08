@@ -1,9 +1,153 @@
 html {
-  height: 100%;
+  height: 100%; 
 }
+
+/*@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-ThinItalic-webfont.eot');
+  src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-ThinItalic-webfont.woff') format('woff'),
+       url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+       url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+} */
 
 body {
   margin: 0;
-  min-height: 100%;
   font: 16px / 1 sans-serif;
+  background-color: rgb(2, 30, 40);
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/*top*/
+
+.top {
+  background: url(images/space.png);
+}
+
+.whoIam{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:8em;
+}
+
+.profilepic{
+  margin:2em;
+  width:200px;
+  height:200px;
+}
+
+/*?*/ 
+
+.speech-bubble {
+	background: #c0c0c0;
+  border-radius: .4em;
+  height: 5%;
+}
+
+.speech-bubble > p {
+  font: 8px;
+}
+
+.speech-bubble:after {
+	content: '';
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: .5em solid transparent;
+	border-top-color: #c0c0c0;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -2em;
+	margin-bottom: -1em;
+}
+
+/*portfolio*/
+
+.black-bar{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-container{
+  margin: 1.5em .75em;
+  
+}
+
+
+/*blog*/
+
+.blog{
+  display: flex;
+  flex-direction: column;
+}
+
+.post1{
+  border-radius: 3px; /*?*/
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin: 1.5em;
+}
+
+.content-container{
+  background-color: white;
+  padding:1.5em;
+  max-width: 95%;
+}
+
+.button-row{
+ display:flex;
+ justify-content: flex-end;
+ margin: -4em 2em;
+}
+
+.button {
+  border-radius: 3px;
+  background-color: mediumblue;
+  color:white;
+  width: 150px;
+  margin:1.5em;
+  padding: 1em;
+  display: flex;
+  justify-content:center;
+}
+
+/*footer*/
+
+.footer > h2 {
+  color: white;
+}
+
+.footer > p {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.social-icon{
+  
+  margin: .5em;
 }
