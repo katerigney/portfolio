@@ -30,7 +30,7 @@ body {
   background: url(images/space.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 1.5em;
+  margin: 0em 1em;
 }
 
 .whoIam {
@@ -51,7 +51,7 @@ body {
 .speech-bubble {
 	background: #c0c0c0;
   border-radius: .4em;
-  height: 5%;
+  height: 3%;
 }
 
 .speech-bubble > p {
@@ -96,22 +96,23 @@ body {
 .blog {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.post1 {
+.post {
   border-radius: 5px;
   display: flex; 
   flex-direction: column;
   justify-content: center; 
-  margin: 1.5em;
+  margin: 1em 1em 4em 1em;
   background-color: white;
 }
 
 .blog-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   max-width: 100%;
-  margin: -200px 0px;
-  clip-path: inset(200px 0px 200px 0px);
-}
+  object-fit: cover;}
 
 .content-container {
   padding:1.5em;
@@ -129,16 +130,14 @@ body {
 .button-row {
  display:flex;
  justify-content: flex-end;
- margin: -4em 2em;
+ margin: -5em 3em 1em 0em;
 }
 
 .button {
-  border-radius: 3px;
-  background-color: mediumblue;
+  border-radius: 5px;
+  background-color: rgb(30, 144, 255);
   color:white;
-  width: 150px;
-  margin:1.5em;
-  padding: 1em;
+  padding: .75em;
   display: flex;
   justify-content:center;
 }
@@ -162,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 6em 1.5em;
+  margin: 3em 1.5em;
 }
 
 .social-container {
