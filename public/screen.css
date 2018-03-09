@@ -2,26 +2,21 @@ html {
   height: 100%; 
 }
 
-/*@font-face {
+@font-face {
   font-family: 'Roboto';
-  src: url('Roboto-ThinItalic-webfont.eot');
-  src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('Roboto-ThinItalic-webfont.woff') format('woff'),
-       url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-       url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
-} */
+  src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
 
 body {
   margin: 0;
-  font: 16px / 1 sans-serif;
   background-color: rgb(2, 30, 40);
+  font-family: 'Roboto' , sans-serif;
 }
 
 .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 /*top*/
@@ -52,10 +47,6 @@ body {
 	background: #c0c0c0;
   border-radius: .4em;
   height: 3%;
-}
-
-.speech-bubble > p {
-  font: 8px;
 }
 
 .speech-bubble:after {
